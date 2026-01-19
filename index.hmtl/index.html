@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Jersey Store Landing Page V1</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#CB9D06",
+                        "background-light": "#f8f5f5",
+                        "background-dark": "#221010",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-[#181111] dark:text-white">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- TopAppBar -->
+        <header
+            class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-[#e6dbdb] dark:border-[#3d2a2a]">
+            <div class="flex items-center p-4 justify-between max-w-7xl mx-auto w-full">
+                <div class="flex items-center gap-2">
+                    <div
+                        class="text-primary flex size-10 shrink-0 items-center justify-center bg-primary/10 rounded-full">
+                        <span class="material-symbols-outlined">sports_soccer</span>
+                    </div>
+                    <h2
+                        class="text-[#181111] dark:text-white text-lg font-black leading-tight tracking-tight uppercase">
+                        XS MANTOS</h2>
+                </div>
+                <div class="flex gap-2">
+                    <button
+                        class="flex size-10 items-center justify-center rounded-full bg-transparent text-[#181111] dark:text-white">
+                        <span class="material-symbols-outlined">search</span>
+                    </button>
+                    <button
+                        class="relative flex size-10 items-center justify-center rounded-full bg-transparent text-[#181111] dark:text-white">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        <span
+                            class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-white">2</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Tabs (Navigation) -->
+            <div class="flex overflow-x-auto no-scrollbar border-t border-[#f0e8e8] dark:border-[#3d2a2a] px-4 gap-6">
+                <a class="flex flex-col items-center justify-center border-b-[3px] border-primary text-primary pb-3 pt-3"
+                    href="#">
+                    <p class="text-xs font-bold uppercase tracking-wider">Retro</p>
+                </a>
+                <a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-[#8a6060] pb-3 pt-3"
+                    href="#">
+                    <p class="text-xs font-bold uppercase tracking-wider">Torcedor</p>
+                </a>
+                <a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-[#8a6060] pb-3 pt-3"
+                    href="#">
+                    <p class="text-xs font-bold uppercase tracking-wider">Jogador</p>
+                </a>
+                <a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-[#8a6060] pb-3 pt-3"
+                    href="#">
+                    <p class="text-xs font-bold uppercase tracking-wider">Feminina</p>
+                </a>
+            </div>
+        </header>
+        <!-- HeroSection -->
+        <section class="@container p-4">
+            <div class="flex min-h-[420px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-start justify-end px-6 pb-10 shadow-xl"
+                data-alt="Modern soccer jersey display background"
+                style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.7) 100%), url(.//xs-mantos.jpeg);'>
+                <div class="flex flex-col gap-2 text-left">
+                </div>
+                <button
+                    class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-full h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide shadow-lg shadow-primary/30 active:scale-95 transition-transform">
+                    <span><a href="https://wa.me/message/Z3UPQBMSMKO5J1">Compre pelo WathsApp</a></span>
+                </button>
+            </div>
+        </section>
+        <!-- Category Switcher (Chips) -->
+        <section class="py-2">
+            <div class="flex items-center justify-between px-4">
+                <h2
+                    class="text-[#181111] dark:text-white text-xl font-black leading-tight uppercase italic tracking-tighter">
+                    Shop Categorias</h2>
+                <div class="flex gap-1">
+                    <button
+                        class="size-8 rounded-full bg-white dark:bg-white/10 flex items-center justify-center border border-[#e6dbdb] dark:border-transparent">
+                        <span class="material-symbols-outlined text-sm">arrow_back_ios_new</span>
+                    </button>
+                    <button
+                        class="size-8 rounded-full bg-white dark:bg-white/10 flex items-center justify-center border border-[#e6dbdb] dark:border-transparent">
+                        <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+                    </button>
+                </div>
+            </div>
+            <div class="flex gap-3 p-4 overflow-x-auto no-scrollbar">
+                <div
+                    class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary text-white px-5 shadow-md shadow-primary/20">
+                    <p class="text-sm font-bold">Torcedor</p>
+                </div>
+                <div
+                    class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-white/5 border border-[#e6dbdb] dark:border-[#3d2a2a] px-5">
+                    <p class="text-sm font-medium">Jogador</p>
+                </div>
+                <div
+                    class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-white/5 border border-[#e6dbdb] dark:border-[#3d2a2a] px-5">
+                    <p class="text-sm font-medium">Retrô</p>
+                </div>
+                <div
+                    class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-white/5 border border-[#e6dbdb] dark:border-[#3d2a2a] px-5">
+                    <p class="text-sm font-medium">Feminina</p>
+                </div>
+            </div>
+        </section>
+        <!-- Product Grid Section -->
+        <section class="px-4 pb-24">
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Product Card 1 -->
+                <div
+                    class="flex flex-col bg-white dark:bg-[#2d1a1a] rounded-xl overflow-hidden shadow-sm border border-[#e6dbdb] dark:border-[#3d2a2a]">
+                    <div class="relative aspect-[3/4] bg-[#f0f0f0] dark:bg-[#1a0c0c]">
+                        <img alt="Retro Classic Soccer Jersey" class="h-full w-full object-cover"
+                            data-alt="Classic white and purple retro soccer jersey"
+                            src=".//CAMISA CORINTHIANS.jpg" />
+                    </div>
+                    <div class="p-3 flex flex-col flex-1 justify-between">
+                        <div>
+                            <h3 class="text-sm font-bold text-[#181111] dark:text-white leading-tight">Camisa Corinthians
+                            </h3>
+                            <p class="text-xs text-[#8a6060] dark:text-white/60 mt-1">2024/2025</p>
+                        </div>
+                        <div class="mt-3 flex items-center justify-between gap-1">
+                            <span class="text-primary font-black text-base">R$179,90</span>
+                            <button
+                                class="bg-primary size-8 rounded-full flex items-center justify-center text-white shadow-lg shadow-primary/20">
+                                <span class="material-symbols-outlined text-xl">add_shopping_cart</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div
+                    class="flex flex-col bg-white dark:bg-[#2d1a1a] rounded-xl overflow-hidden shadow-sm border border-[#e6dbdb] dark:border-[#3d2a2a]">
+                    <div class="relative aspect-[3/4] bg-[#f0f0f0] dark:bg-[#1a0c0c]">
+                        <img alt="Blue team soccer jersey" class="h-full w-full object-cover"
+                            data-alt="Blue team authentic performance soccer jersey"
+                            src=".//CAMISA FLAMENGO TORCEDOR.jpg"/>
+                    </div>
+                    <div class="p-3 flex flex-col flex-1 justify-between">
+                        <div>
+                            <h3 class="text-sm font-bold text-[#181111] dark:text-white leading-tight">Camisa Flamengo
+                            </h3>
+                            <p class="text-xs text-[#8a6060] dark:text-white/60 mt-1">2024/2025</p>
+                        </div>
+                        <div class="mt-3 flex items-center justify-between gap-1">
+                            <span class="text-primary font-black text-base">R$169.00</span>
+                            <button
+                                class="bg-primary size-8 rounded-full flex items-center justify-center text-white shadow-lg shadow-primary/20">
+                                <span class="material-symbols-outlined text-xl">add_shopping_cart</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div
+                    class="flex flex-col bg-white dark:bg-[#2d1a1a] rounded-xl overflow-hidden shadow-sm border border-[#e6dbdb] dark:border-[#3d2a2a]">
+                    <div class="relative aspect-[3/4] bg-[#f0f0f0] dark:bg-[#1a0c0c]">
+                        <img alt="Red and white jersey" class="h-full w-full object-cover"
+                            data-alt="Red and white striped fan soccer jersey"
+                            src=".//CAMISA SANTOS TORCEDOR.jpg" />
+                    </div>
+                    <div class="p-3 flex flex-col flex-1 justify-between">
+                        <div>
+                            <h3 class="text-sm font-bold text-[#181111] dark:text-white leading-tight">Camisa Santos
+                            </h3>
+                            <p class="text-xs text-[#8a6060] dark:text-white/60 mt-1">2024/2025</p>
+                        </div>
+                        <div class="mt-3 flex items-center justify-between gap-1">
+                            <span class="text-primary font-black text-base">R$175.00</span>
+                            <button
+                                class="bg-primary size-8 rounded-full flex items-center justify-center text-white shadow-lg shadow-primary/20">
+                                <span class="material-symbols-outlined text-xl">add_shopping_cart</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div
+                    class="flex flex-col bg-white dark:bg-[#2d1a1a] rounded-xl overflow-hidden shadow-sm border border-[#e6dbdb] dark:border-[#3d2a2a]">
+                    <div class="relative aspect-[3/4] bg-[#f0f0f0] dark:bg-[#1a0c0c]">
+                        <img alt="Black special edition jersey" class="h-full w-full object-cover"
+                            data-alt="Black and gold special edition soccer jersey"
+                            src="CAMISA VASCO TORCEDOR.jpg"/>
+                    </div>
+                    <div class="p-3 flex flex-col flex-1 justify-between">
+                        <div>
+                            <h3 class="text-sm font-bold text-[#181111] dark:text-white leading-tight">Camisa Vasco
+                            </h3>
+                            <p class="text-xs text-[#8a6060] dark:text-white/60 mt-1">2024/2025</p>
+                        </div>
+                        <div class="mt-3 flex items-center justify-between gap-1">
+                            <span class="text-primary font-black text-base">R$129.90</span>
+                            <button
+                                class="bg-primary size-8 rounded-full flex items-center justify-center text-white shadow-lg shadow-primary/20">
+                                <span class="material-symbols-outlined text-xl">add_shopping_cart</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Bottom Navigation (iOS Style) -->
+        <nav
+            class="fixed bottom-0 left-0 right-0 h-20 bg-white/95 dark:bg-[#1a0c0c]/95 backdrop-blur-lg border-t border-[#e6dbdb] dark:border-[#3d2a2a] flex items-center justify-around px-6 pb-4">
+            <button class="flex flex-col items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-[28px]">home</span>
+                <span class="text-[10px] font-bold mt-0.5">Home</span>
+            </button>
+            </button>
+            <button class="flex flex-col items-center justify-center text-[#8a6060] dark:text-white/60">
+                <span class="material-symbols-outlined text-[28px]">grid_view</span>
+                <span class="text-[10px] font-bold mt-0.5">Catalog</span>
+            </button>
+            </button>
+        </nav>
+    </div>
+</body>
+
+</html>
